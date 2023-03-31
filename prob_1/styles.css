@@ -1,0 +1,234 @@
+:root {
+    --twitterIcon: url("assets/twitter.svg");
+    --whiteColor: white;
+    --blackColor: black;
+    --blueColor: #00070d;
+    --blueLight: #2d3ce0;
+    --blueBackground: #08144a;
+    --avatarSrc: url("https://rickandmortyapi.com/api/character/avatar/2.jpeg");
+    --gray: #3f3f3f;
+}
+
+html {
+    display: flex;
+    flex-flow: column;
+    background-color:var(--whiteColor);
+    color: var(--blackColor);
+    width: 100%;
+    height: 100%;
+}
+
+/* body containers */
+body {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+
+header {
+    align-items: center;
+    display: grid;
+    width: 90%;
+    height: 100%;
+    padding: 24px 0px 24px 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+}
+
+* {
+    /* border: solid; */
+}
+
+/* flex */
+.flex-column {
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-row {
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    flex-flow: row;
+}
+
+/* margin */
+.margin-right {
+    margin-right: 16px;
+}
+
+.margin-left {
+    margin-left: 16px;
+}
+
+/* alignment */
+.align-left {
+    margin-left: 16px;
+    text-align-last: left;
+}
+
+.align-right {
+    margin-right: 16px;
+    text-align-last: right;
+}
+
+/* grid templates */
+.grid-main-container {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 90%;
+    height: 85%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+}
+
+.grid-cards-left {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 95%;
+    height: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.grid-cards-right {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+}
+
+.grid-cards-six {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 90%;
+    height: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.grid-card-top {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+/* content styles */
+.card {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    background-color: var(--blueBackground);
+}
+
+.card-time {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color:var(--blueBackground);
+}
+
+.card-hour {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.card-last-time {
+    font-size: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.card-description {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+    background-color:var(--blueLight);
+    margin: 0;
+}
+
+.avatar {
+    place-self: left;
+    margin: 16px;
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-color: var(--whiteColor);
+    border-radius: 100%;
+}
+
+.margin-top-bot {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.click-style {
+    cursor: pointer;
+}
+
+#sectionLeft p {
+    margin-left: 16px;
+}
+
+#sectionLeft h2 {
+    margin-left: 16px;
+}
+
+.hiden {
+    width: auto;
+    height: auto;
+    display: none;
+}

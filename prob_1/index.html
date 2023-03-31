@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem 1</title>
+        <style> @import url("styles.css"); </style>
+    </head>
+    <body>
+        <header>
+            <section class="flex-row width-xlg">
+                <h1 id="headerTitle" class="header-title">Problem 1</h1>
+            </section>
+        </header>
+
+        <main>
+            <section id="gridCardsContainer" class="grid-main-container">
+                <section id="sectionLeft" class="grid-cards-left">
+                    <section id="card1Time" class="card-time">
+                        <section id="card1Description" class="card-description">
+                            <img id="avatar" class="avatar" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+                            <p>Report for</p>
+                            <h2>Andrei Santos</h2>
+
+                        </section>
+
+                        <section id="card1TimeText" class="margin-top-bot">
+                            <p class="click-style" onclick="updateData('monthly')">Monthly</p>
+                            <p class="click-style" onclick="updateData('weekly')">Weekly</p>
+                            <p class="click-style" onclick="updateData('daily')">Daily</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
